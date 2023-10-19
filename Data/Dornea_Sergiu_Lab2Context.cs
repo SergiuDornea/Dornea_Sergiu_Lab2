@@ -17,5 +17,7 @@ namespace Dornea_Sergiu_Lab2.Data
         public DbSet<Dornea_Sergiu_Lab2.Models.Book> Book { get; set; } = default!;
 
         public DbSet<Dornea_Sergiu_Lab2.Models.Publisher>? Publisher { get; set; }
+
+        public DbSet<Dornea_Sergiu_Lab2.Models.Author>? Author { get; set; }
     }
 }
