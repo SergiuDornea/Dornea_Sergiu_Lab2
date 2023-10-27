@@ -7,6 +7,7 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        public string AuthorName => $"{FirstName} {LastName}";
         public ICollection<Book>? Books { get; set; } // nav property for Book
 
 
