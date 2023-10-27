@@ -33,6 +33,7 @@ namespace Dornea_Sergiu_Lab2.Pages.Publishers
         {
           if (!ModelState.IsValid || _context.Publisher == null || Publisher == null)
             {
+                
                 return Page();
             }
 

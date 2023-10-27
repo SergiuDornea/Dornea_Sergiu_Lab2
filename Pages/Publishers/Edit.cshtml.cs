@@ -45,6 +45,9 @@ namespace Dornea_Sergiu_Lab2.Pages.Publishers
         {
             if (!ModelState.IsValid)
             {
+                ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "ID",
+"AuthorName");
+
                 return Page();
             }
 
