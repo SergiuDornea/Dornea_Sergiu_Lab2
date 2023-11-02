@@ -3,7 +3,7 @@ using Dornea_Sergiu_Lab2.Data;
 
 namespace Dornea_Sergiu_Lab2.Models
 {
-    public class BookCategoriesPageModel:PageModel
+    public class BookCategoriesPageModel : PageModel
     {
         public List<AssignedCategoryData> AssignedCategoryDataList;
         public void PopulateAssignedCategoryData(Dornea_Sergiu_Lab2Context context,
@@ -61,5 +61,6 @@ namespace Dornea_Sergiu_Lab2.Models
                 }
             }
         }
+
     }
 }
