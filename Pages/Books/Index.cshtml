@@ -47,10 +47,14 @@
             }
             <tr class="@selectedRow">
             <td>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.TitleSort">
                 @Html.DisplayFor(modelItem => item.Title)
+                </a>
             </td>
             <td>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.AuthorSort">
                  @Html.DisplayFor(modelItem => item.Author.AuthorName)
+                 </a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
