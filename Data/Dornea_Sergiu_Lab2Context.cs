@@ -30,5 +30,9 @@ namespace Dornea_Sergiu_Lab2.Data
                 .HasForeignKey<Borrowing>(bw => bw.BookID);
         }
 
+        public DbSet<Dornea_Sergiu_Lab2.Models.Member>? Member { get; set; }
+
+        public DbSet<Dornea_Sergiu_Lab2.Models.Borrowing>? Borrowing { get; set; }
+
     }
 }
