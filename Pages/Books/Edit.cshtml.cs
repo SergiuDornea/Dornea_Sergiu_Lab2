@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Dornea_Sergiu_Lab2.Data;
 using Dornea_Sergiu_Lab2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Dornea_Sergiu_Lab2.Pages.Books
 {
+    [Authorize(Roles = "Admin")]
     public class EditModel : BookCategoriesPageModel
     {
         private readonly Dornea_Sergiu_Lab2.Data.Dornea_Sergiu_Lab2Context _context;
