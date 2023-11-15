@@ -9,6 +9,8 @@ namespace Dornea_Sergiu_Lab2.Models
         public int ID { get; set; }
 
         [Display(Name = "Book Title")]
+        [Required(ErrorMessage = "Title must be filled.")]
+        [StringLength(150, MinimumLength = 3, ErrorMessage = "Title must have at least 3 characters, and a maximmum of 150 characters.")]
         public string Title { get; set; }
 
         public int? AuthorID { get; set; }
